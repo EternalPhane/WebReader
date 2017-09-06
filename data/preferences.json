@@ -1,0 +1,31 @@
+{
+    "fontSize": 14,
+    "night": false,
+    "nightTheme": {
+        "background": "#0f1410",
+        "font": "#4e534f"
+    },
+    "theme": 0,
+    "themes": [
+        {
+            "background": "#f7eee5",
+            "font": "#000000"
+        },
+        {
+            "background": "#e9dfc7",
+            "font": "#000000"
+        },
+        {
+            "background": "#a4a4a4",
+            "font": "#000000"
+        },
+        {
+            "background": "#cdefce",
+            "font": "#000000"
+        },
+        {
+            "background": "#283548",
+            "font": "#7685a2"
+        }
+    ]
+}

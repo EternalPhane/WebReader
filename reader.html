@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/reader.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-inverse bg-inverse" id="navbar">
+            <div class="row">
+                <div class="col m-1">
+                    <a class="btn-reader" href="#">
+                        <img src="assets/img/chevron-left.svg" class="icon">
+                        <span class="ml-1">返回书架</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar fixed-bottom navbar-inverse bg-inverse" id="toolbar">
+            <div class="mb-4" id="item-bar-font">
+                <div class="row mb-2">
+                    <label class="text-white col-2 col-form-label" for="reader-font-size">字体</label>
+                    <div class="col-10">
+                        <input class="form-control px-0 border-0 mx-3" id="reader-font-size" type="range" min=12 max=20 step=1 style="width:calc(100% - 2rem)">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="text-white col-2 cl-form-label" for="reader-theme">背景</label>
+                    <div class="col-10">
+                        <div class="btn-group ml-3" role="group" id="reader-theme"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn-reader" href="#" id="item-contents">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/img/bars.svg" class="icon m-1">
+                            <span class="d-inline-block m-1">目录</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="btn-reader" href="#" id="item-font">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/img/font.svg" class="icon m-1">
+                            <span class="d-inline-block m-1">字体</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="btn-reader" href="#" id="item-night">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/img/moon-o.svg" class="icon m-1">
+                            <span class="d-inline-block m-1">夜间</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="m-reader-action">
+            <div class="reader-action-center-v"></div>
+        </div>
+        <div id="reader-content"></div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery 3.2.1 -->
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- jQuery.base64 -->
+    <script src="assets/js/vendor/jquery.base64.js"></script>
+    <!-- Tether 1.4.0 -->
+    <script src="assets/js/vendor/tether.min.js"></script>
+    <!-- Bootstrap v4 alpha -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="assets/js/reader.js"></script>
+    <script>
+        /* global Reader */
+        $(function() {
+            Reader.init();
+            Reader.novel = { name: '娱乐圈最佳拍档' };
+            Reader.showChapter(3, '第004章 绝处逢生？');
+        });
+    </script>
+</body>
+
+</html>
